@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard Template</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="bg-wrapper">
+    
+    <div class="weather-card">
+      
+      <div class="card-header">
+        <div class="location-details">
+          <h1 id="city-name">Kurnool</h1>
+          <p id="date-time">Friday, 11 September 2026 | 8:46 PM</p>
+        </div>
+
+        <div class="search-box">
+          <div class="input-wrapper">
+            <input type="text" id="search-input" placeholder="Enter city name">
+          </div>
+          <button id="search-btn">Search</button>
+          <button id="location-btn" title="Current Location">
+            <i class="fa-solid fa-crosshairs"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="weather-body">
+        
+        <div class="temp-section">
+          <div class="temp-display">
+            <span id="temp-val">31</span>
+            <div class="units">
+              <span class="active-unit" id="unit-c">°C</span>
+              <span class="divider">|</span>
+              <span class="inactive-unit" id="unit-f">°F</span>
+            </div>
+          </div>
+          <p id="weather-desc">Partly cloudy</p>
+        </div>
+
+        <div class="details-section">
+          <div class="weather-icon-main">
+            <div class="icon-illustration">
+              <div class="moon"></div>
+              <div class="cloud"></div>
+            </div>
+          </div>
+
+          <div class="stats-list">
+            <div class="stat-item">
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <span>Feels like: <strong id="feels-like">31°C</strong></span>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-droplet"></i>
+              <span>Humidity: <strong id="humidity">15%</strong></span>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-wind"></i>
+              <span>Wind: <strong id="wind-speed">14 km/h</strong></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="forecast-container">
+        
+        <div class="forecast-card">
+          <span class="day">Friday</span>
+          <div class="forecast-icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <span class="forecast-temp">31° - 23°</span>
+          <span class="forecast-desc">Overcast clouds</span>
+        </div>
+
+        <div class="forecast-card">
+          <span class="day">Saturday</span>
+          <div class="forecast-icon sun-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <span class="forecast-temp">26° - 18°</span>
+          <span class="forecast-desc">Clear sky</span>
+        </div>
+
+        <div class="forecast-card">
+          <span class="day">Sunday</span>
+          <div class="forecast-icon">
+            <i class="fa-solid fa-smog"></i>
+          </div>
+          <span class="forecast-temp">25° - 17°</span>
+          <span class="forecast-desc">Haze</span>
+        </div>
+
+        <div class="forecast-card">
+          <span class="day">Monday</span>
+          <div class="forecast-icon rain-icon">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+          </div>
+          <span class="forecast-temp">22° - 13°</span>
+          <span class="forecast-desc">Light Rain</span>
+        </div>
+
+        <div class="forecast-card">
+          <span class="day">Tuesday</span>
+          <div class="forecast-icon storm-icon">
+            <i class="fa-solid fa-cloud-bolt"></i>
+          </div>
+          <span class="forecast-temp">24° - 11°</span>
+          <span class="forecast-desc">Thunderstorm</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
